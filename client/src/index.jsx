@@ -13,7 +13,6 @@ class Cart extends React.Component {
     this.state = {
       allProducts: {},
       currentProduct: {
-        _id: "5dee77511c9d440000f1b68c",
         primaryKey: 1,
         name:
           "Nestle Pure Life Purified Water, 16.9 fl oz. Plastic Bottles (12 count)",
