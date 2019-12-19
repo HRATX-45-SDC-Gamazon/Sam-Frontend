@@ -1,7 +1,9 @@
 const faker = require("faker");
 const Promise = require("bluebird");
 const { Pool } = require("pg");
+const mongo = require("mongodb").MongoClient;
 
+// postgres
 const pool = new Pool({
   user: "samlawson",
   host: "localhost",
@@ -10,16 +12,18 @@ const pool = new Pool({
   port: 5432
 });
 
-//2.52m
-
-// let name = "streetf927459872095≈≈ighter hodukin!!!!";
-
-// pool.query(`INSERT INTO testPGTable(firstName) VALUES ('${name}');`, () =>
-//   console.log("done")
-// );
+// mongo
+  mongo.connect("mongodb+srv://testmongo-trc4v.mongodb.net/testDB", (err, db) => {
+    if (err) throw err;
+console.log(mongo.Collection)
+// db.testCollection.insertOne({yo: 'man'})
+  });
 
 const insertLine = line => {
-  pool.query(line);
+  // mongo.testCollection.insert({ testLINE: line });
+  pool.query(line); // postgres
+
+
 };
 
 const seedTheBeast = () => {
