@@ -32,6 +32,7 @@
 
 CREATE TABLE IF NOT EXISTS sdcGammazon (
   id SERIAL,
+  primaryKey INT,
   "name" TEXT,
   price TEXT,
   stock INT,
