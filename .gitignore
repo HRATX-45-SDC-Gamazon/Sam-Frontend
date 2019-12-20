@@ -67,16 +67,6 @@ typings/
 scratch.js
 # bigHold.js
 # scratch.py
-
-2dataToSeed.csv
-3dataToSeed.csv
-4dataToSeed.csv
-5dataToSeed.csv
-6dataToSeed.csv
-7dataToSeed.csv
-8dataToSeed.csv
-9dataToSeed.csv
-10dataToSeed.csv
-dataToSeedFirst.csv
-
-.venv/
+.venv
+.vscode
+venv/bin/activate
