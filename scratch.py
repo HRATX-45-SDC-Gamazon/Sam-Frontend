@@ -14,11 +14,11 @@ fake = Faker()
 def create_rows_mimesis(num=1):
     return [
         {           
-                    "primaryKey" : x+9000000+1,
-                    "name" : fake.sentence(nb_words=10, variable_nb_words=True, ext_word_list=None),
-                    "price" : str(fake.pyfloat(left_digits=2, right_digits=2, positive=True, min_value=None, max_value=None)),
-                    "stock" : fake.pyint(),
-                    "group" : fake.name()
+             "primaryKey" : x+9000000+1,
+             "name" : fake.sentence(nb_words=10, variable_nb_words=True, ext_word_list=None),
+             "price" : str(fake.pyfloat(left_digits=2, right_digits=2, positive=True, min_value=None, max_value=None)),
+             "stock" : fake.pyint(),
+             "group" : fake.name()
         }
         for x in range(num)
     ]

@@ -24,28 +24,32 @@ class Cart extends React.Component {
     };
   }
 
-  componentDidMount() {
-    axios
-      .get("http://buyboxapi.us-west-2.elasticbeanstalk.com/allProducts")
-      .then(data => {
-        console.log(data.data);
-        this.setState({
-          allProducts: data.data
-        });
-      })
-      .then(() => {
-        this.getId();
-      })
-      .then(() => {
-        this.randomizeSellers();
-      })
-      .then(() => {
-        this.populateQuantity();
-      })
-      .catch(err => {
-        console.error(err);
-      });
-  }
+  // componentDidMount() {
+  //   axios.get("/").then(console.log("doih"));
+  // }
+
+  // componentDidMount() {
+  //   axios
+  //     .get("/")
+  //     .then(data => {
+  //       console.log(data.data);
+  //       this.setState({
+  //         allProducts: data.data
+  //       });
+  //     })
+  //     .then(() => {
+  //       this.getId();
+  //     })
+  //     .then(() => {
+  //       this.randomizeSellers();
+  //     })
+  //     .then(() => {
+  //       this.populateQuantity();
+  //     })
+  //     .catch(err => {
+  //       console.error(err);
+  //     });
+  // }
 
   randomizeSellers() {
     let moreSellers = [];
