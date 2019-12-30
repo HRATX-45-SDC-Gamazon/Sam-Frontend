@@ -29,14 +29,15 @@
 -- );
 
 
+USE sdcDatabase;
 
 CREATE TABLE IF NOT EXISTS sdcGammazon (
-  id SERIAL,
+  id INT AUTO_INCREMENT PRIMARY KEY,
   primaryKey INT,
-  "name" TEXT,
+  name TEXT,
   price TEXT,
   stock INT,
-  "group" TEXT
+  `group` TEXT
 );
 
 

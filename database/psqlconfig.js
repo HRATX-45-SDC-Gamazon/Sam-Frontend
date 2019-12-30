@@ -1,5 +1,5 @@
 const { Pool } = require("pg");
-const mongo = require("mongodb").MongoClient;
+
 // postgres
 const pool = new Pool({
   user: "samlawson",

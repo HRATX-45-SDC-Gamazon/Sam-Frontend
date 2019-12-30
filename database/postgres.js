@@ -1,8 +1,8 @@
 const mongo = require("mongodb").MongoClient;
-const pool = require("./psqlconfig.js");
+const pool = require("./psqlconfig.js").pool;
 
-const psqlGet = (line, callback) => {
-  pool.pool.query(line, (err, results) => {
+const psqlGet = callback => {
+  pool.query(`select * from sdcGammazon where id = 5;`, (err, results) => {
     if (err) {
       console.log(err);
     } else {
@@ -11,8 +11,8 @@ const psqlGet = (line, callback) => {
   });
 };
 
-// const psqlGet = line => {
-//   return pool.query(line, (err, results) => {
+// const psqlGet = (line, callback) => {
+//   pool.pool.query(line, (err, results) => {
 //     if (err) {
 //       console.log(err);
 //     } else {
