@@ -29,15 +29,27 @@
 -- );
 
 
-USE sdcDatabase;
+-- mysql
+-- USE sdcDatabase;
 
+-- CREATE TABLE IF NOT EXISTS sdcGammazon (
+--   id INT AUTO_INCREMENT PRIMARY KEY,
+--   primaryKey INT AUTO_INCREMENT,
+--   name TEXT,
+--   price TEXT,
+--   stock INT,
+--   `group` TEXT
+-- );
+
+
+
+
+-- psql
 CREATE TABLE IF NOT EXISTS sdcGammazon (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  primaryKey INT,
-  name TEXT,
+  id SERIAL PRIMARY KEY,
+  primaryKey INT = ,
+  "name" TEXT,
   price TEXT,
   stock INT,
-  `group` TEXT
+  "group" TEXT
 );
-
-

@@ -42,6 +42,7 @@
 #       - get:
 #           url: "/"
 
+## get
 config:
   target: "http://localhost:3380"
   phases:
@@ -52,3 +53,38 @@ scenarios:
   - flow:
       - get:
           url: "/"
+## post
+# config:
+#   target: "http://localhost:3380"
+#   phases:
+#     - duration: 10
+#       arrivalRate: 1000
+#       name: "1000"
+# scenarios:
+#   - flow:
+#       - post:
+#           url: "/"
+
+## put
+# config:
+#   target: "http://localhost:3380"
+#   phases:
+#     - duration: 10
+#       arrivalRate: 1000
+#       name: "1000"
+# scenarios:
+#   - flow:
+#       - put:
+#           url: "/"
+
+## delete
+# config:
+#   target: "http://localhost:3380"
+#   phases:
+#     - duration: 10
+#       arrivalRate: 1000
+#       name: "1000"
+# scenarios:
+#   - flow:
+#       - delete:
+#           url: "/"
