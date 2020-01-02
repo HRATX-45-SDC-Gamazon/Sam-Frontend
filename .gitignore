@@ -67,6 +67,5 @@ typings/
 scratch.js
 # bigHold.js
 # scratch.py
-.venv/
+.venv
 .vscode
-venv/bin/activate
