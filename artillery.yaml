@@ -47,7 +47,7 @@ config:
   target: "http://localhost:3380"
   phases:
     - duration: 10
-      arrivalRate: 3000
+      arrivalRate: 200
       name: "1000"
 scenarios:
   - flow:
