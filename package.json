@@ -19,7 +19,7 @@
     "bluebird": "^3.7.2",
     "express": "^4.17.1",
     "faker": "^4.1.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "loadtest": "^4.0.0",
     "mongodb": "^3.4.0",
     "node": "^13.3.0",
